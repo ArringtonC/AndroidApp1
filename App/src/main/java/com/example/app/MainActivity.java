@@ -20,6 +20,10 @@ import android.widget.TextView;
 
 public class MainActivity extends ActionBarActivity
         implements NavigationDrawerFragment.NavigationDrawerCallbacks {
+    final String[] fragments ={
+            "com.example.app.FragmentOne",
+            "com.example.app.FragmentTwo",
+            "com.example.app.FragmentThree"};
 
     /**
      * Fragment managing the behaviors, interactions and presentation of the navigation drawer.
@@ -46,13 +50,17 @@ public class MainActivity extends ActionBarActivity
                 (DrawerLayout) findViewById(R.id.drawer_layout));
     }
 
+
     @Override
     public void onNavigationDrawerItemSelected(int position) {
         // update the main content by replacing fragments
         FragmentManager fragmentManager = getSupportFragmentManager();
         fragmentManager.beginTransaction()
-                .replace(R.id.container, PlaceholderFragment.newInstance(position + 1))
+                .replace(R.id.container, Fragment.instantiate( MainActivity.this, fragments[position]))
                 .commit();
+
+
+
     }
 
     public void onSectionAttached(int number) {
@@ -66,6 +74,26 @@ public class MainActivity extends ActionBarActivity
             case 3:
                 mTitle = getString(R.string.title_section3);
                 break;
+            case  4:
+                mTitle = getString(R.string.title_section4);
+                break;
+            case 5:
+                mTitle = getString(R.string.title_section5);
+                break;
+            case 6:
+                mTitle = getString(R.string.title_section6);
+                break;
+            case 7:
+                mTitle = getString(R.string.title_section7);
+                break;
+            case  8:
+                mTitle = getString(R.string.title_section8);
+                break;
+            case 9:
+                mTitle = getString(R.string.title_section9);
+                break;
+
+
         }
     }
 
