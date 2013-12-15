@@ -23,7 +23,7 @@ public class FragmentThree extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
-        ViewGroup root = (ViewGroup) inflater.inflate(R.layout.fragment_one, null);
+        ViewGroup root = (ViewGroup) inflater.inflate(R.layout.fragment_three, null);
         return root;
 
     }

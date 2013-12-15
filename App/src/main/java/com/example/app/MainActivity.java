@@ -23,7 +23,11 @@ public class MainActivity extends ActionBarActivity
     final String[] fragments ={
             "com.example.app.FragmentOne",
             "com.example.app.FragmentTwo",
-            "com.example.app.FragmentThree"};
+            "com.example.app.FragmentThree",
+            "com.example.app.FragmentFour",
+            "com.example.app.FragmentFive",
+            "com.example.app.FragmentSix",
+            "com.example.app.FragmentSeven"};
 
     /**
      * Fragment managing the behaviors, interactions and presentation of the navigation drawer.
@@ -86,12 +90,7 @@ public class MainActivity extends ActionBarActivity
             case 7:
                 mTitle = getString(R.string.title_section7);
                 break;
-            case  8:
-                mTitle = getString(R.string.title_section8);
-                break;
-            case 9:
-                mTitle = getString(R.string.title_section9);
-                break;
+
 
 
         }
