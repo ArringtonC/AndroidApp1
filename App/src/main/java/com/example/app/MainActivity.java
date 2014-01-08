@@ -52,6 +52,7 @@ public class MainActivity extends ActionBarActivity
                 R.id.navigation_drawer,
                 (DrawerLayout) findViewById(R.id.drawer_layout));
 
+
         Parse.initialize(this, "LEwR22KqgzkmU6VzGUnWkdnaj9eYn6tRmGTm6FYD", "bTqEkQ7LYVhnEf6V8aVlafmXCieJGfXQLmVeHfod");
         ParseAnalytics.trackAppOpened(getIntent());
     }
